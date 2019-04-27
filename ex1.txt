@@ -1,0 +1,7 @@
+a = True
+b = False
+c = False
+d = True
+e = True
+f = False
+g = True
