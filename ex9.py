@@ -1,14 +1,12 @@
-#cada cigarro -11 minutos, imprima a quantidade de dias perdidos para 
-#alguem que fume 10 cigarros por dia ha 3 anos
+qntCigDia= int(input("Informe a quantidade de cigarros fumados por dia: "))
+anosFumando= float(input("Quantos anos fumando? "))
 
-perdMinuto=(11)
-qntCig=(10)
-anosFuma=(3*365)
-tempoPerdi=((perdMinuto)*(qntCig)*(anosFuma))
+# 1 ano = 365 dias
 
-minHora=(60)
-horaDia=(24)
-resuPerdi=((tempoPerdi)/(minHora)/(horaDia))
-print(resPerdi, "dias")	
+totalDiasFumando= (qntCigDia) * ((anosFumando)*365)
 
+# tempo perdido por cigarro = 10 minutos
+# 1440 minutos = 1 dia
 
+tempoPerdido= (totalDiasFumando * 10)/1440
+print(tempoPerdido, "dias")
